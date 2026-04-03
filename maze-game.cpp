@@ -14,8 +14,8 @@ int main()
   int width{};            // number of columns in maze grid
   int startX{};           // x-coordinate of the starting position, used for intermediate step
   int endX{};             // x-coordinate of the ending position, used for intermediate step
-  coord startPos{};       // coordinates of the starting position
-  coord endPos{};         // coordinates of the ending position
+  coord playerPosition{}; // coordinates of the player's position
+  coord goal{};           // coordinates of the ending position
   std::string strInput{}; // a given line of the maze file
 
   // get maze file
@@ -35,13 +35,13 @@ int main()
     endX = strInput.find('E');
     if (startX < strInput.length())
     {
-      startPos.x = startX;
-      startPos.y = height;
+      playerPosition.x = startX;
+      playerPosition.y = height;
     }
     if (endX < strInput.length())
     {
-      endPos.x = endX;
-      endPos.y = height;
+      goal.x = endX;
+      goal.y = height;
     }
     height++;
   }
@@ -50,8 +50,8 @@ int main()
   // output
   std::cout << "height: " << height << '\n';
   std::cout << "width: " << width << '\n';
-  std::cout << "S position: [" << startPos.x << ", " << startPos.y << "]" << '\n';
-  std::cout << "E position: [" << endPos.x << ", " << endPos.y << "]" << '\n';
+  std::cout << "S position: [" << playerPosition.x << ", " << playerPosition.y << "]" << '\n';
+  std::cout << "E position: [" << goal.x << ", " << goal.y << "]" << '\n';
 
   return 0;
 }
