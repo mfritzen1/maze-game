@@ -6,7 +6,7 @@ This project requires Raylib and gcc. See https://github.com/raysan5/raylib and 
 
 # Compile & Run
 1. Create a directory called `bin`. The `bin` directory is ignored by git.
-2. Run `make compile` from within the root directory. This will compile the game.
+2. Run `make` from within the root directory. This will compile the game.
 3. Run `./bin/maze-game` (or the equivalent on your platform).
 
 # Mazes
