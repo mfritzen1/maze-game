@@ -12,7 +12,7 @@ This project requires Raylib and gcc. See https://github.com/raysan5/raylib and 
 # Mazes
 Mazes are defined in `.txt` files in the `mazes` directory. You can use the mazes included in this repo or create your own.
 
-To create your own mazes, use `#` for walls, `S` for the player's starting position, `E` for the goal, and whitespace for walkable areas. Below is an example:
+To create your own mazes, use `#` for walls, `S` for the player's starting position, `E` for the goal, and any other character for walkable areas. Below is an example:
 
 ```
 ###########
